@@ -1,21 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-*::selection {
-    background: #458a9a;
-    color: #081b29;
-}
-
-body {
-    color: #ededed;
-}
-
 .header {
     position: fixed;
     top: 0;
@@ -29,24 +11,15 @@ body {
     z-index: 100;
 }
 
-.logo {
-    position: relative;
-    font-size: 25px;
+body {
     color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
+    background-color: #081b29;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.logo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
+.navbar {
+    margin-left: auto;
 }
 
 .navbar a {
@@ -63,430 +36,142 @@ body {
     color: #458a9a;
 }
 
-.home {
-    height: 100vh;
-
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
+.project-description {
+    margin-top: 80px; /* Adjust this value based on the height of your header */
+    padding: 40px 10%;
+    background-color: #081b29; /* Example background color */
+    color: #ededed;
+    text-align: left;
 }
 
-.home-content {
-    max-width: 600px;
-    z-index: 101;
+.project-description h1,
+.project-description h4 {
+    text-align: left; /* Aligns h1 and h4 to the left */
+    font-family: 'Trirong', serif;
 }
-
-.home-content h1 {
-    position: relative;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.home-content h1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
-
-.home-content h3 {
-    position: relative;
-    font-size: 32px;
-    font-weight: 700;
-    color: #458a9a;
-}
-
-.home-content h3::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.3s;
-}
-
-.home-content p {
-    position: relative;
-    font-size: 16px;
-    margin: 20px 0 40px;
-}
-
-.home-content p::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.6s;
-}
-
-.home-content .btn-box {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 345px;
-    height: 50px;
-}
-
-.home-content .btn-box::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.9s;
-    z-index: 2;
-}
-/*
-.project {
-    height: 100vh;
-    background-size:cover;
-    background-position: center;
-    display: grid;
-    background-color: #081b29;
-    align-items:center ;
-    padding: 0 10%;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-.project >* {
-    padding: 1rem;
-}
-*/
-.project {
-    background-size: cover;
-    background-position: center;
-    display: grid;
-    background-color: #081b29;
-    align-items: center;
-    padding: 0; /* Remove any padding that might add spacing */
-    grid-template-columns: 1fr; /* Adjust as necessary, currently set for single column */
-    gap: 0; /* Ensure no gap between grid items */
-    margin: 0; /* Remove any margin */
-}
-
-.project > * {
-    margin: 0; /* Ensure no margin on child elements */
-    padding: 0; /* Ensure no padding on child elements */
-}
-
-
-.project-title, .project-description, .project-img, .btn-box {
-    margin: 0; /* Ensure no margin */
-    padding: 0; /* Ensure no padding */
-}
-
-
-
-.description {
-
-    z-index: 100;
-    height: 20vh;
-    width: 100%;
-    background-size:cover;
-    background-color: #081b29;
-    background-position: center;
-    align-items:center ;
-    padding: 20px 20px 20px 20px;
-
-}
-
-.description >* {
-    padding: 1rem;
-}
-
-.content-container {
-    height: 100vh;
-    display: grid;
-    background-size:cover;
-    background-position: center;
-    grid-template-columns: auto auto;
-    background-color: #081b29;
-    padding: 0 10%;
-    align-items:center ;
-}
-
-.content-container >* {
-    padding: 1rem;
-}
-
-.content img{
-    width: 600px;
-    height: 600px;
-    object-fit: contain;
-
-}
-
-.obw-img img{
-    width: 1000px;
-    height: 1000px;
-    object-fit: contain;
-}
-
-.project-img img{
-    width: 600px;
-    /*height: 100vh;*/
-    object-fit: contain;
-}
-
-.project-description h5{
-    font-family: 'Sofia', sans-serif;
-}
-.project-description{
-    max-width: 500px;
-    z-index: 101;
-
+.project-description h1 {
+    font-size: 36px;
+    margin-bottom: 1px;
 }
 .project-description h4 {
-    position: relative;
-    font-size: 16px;
-    font-weight: 700;
-    color: #458a9a;
-
-}
-
-.project-description h4::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
-
-.project-github a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #458a9a;
-    border-radius: 50%;
     font-size: 20px;
-    color: #458a9a;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+    margin-bottom: 20px;
 }
 
-.project-github a:hover {
+.project-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #458a9a;
     color: #081b29;
 }
-
-.project-github a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #458a9a;
-    z-index: -1;
-    transition: .5s;
+hr {
+    border: none; /* Removes the default border */
+    height: 2px; /* Sets the thickness of the line */
+    background-color:#458a9a; /* Sets the color of the line */
+    margin: 20px 0; /* Adds space above and below the line */
 }
-
-.project-github a:hover::before {
-    width: 100%;
-}
-
-.context h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #458a9a ; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation:
-            typing 1.5s steps(40, end),
-            blink-caret 1.00s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #458a9a; }
-}
-.btn-box a {
+.slideshow-container {
+    max-width: 600px; /* Match this to the max width of images */
     position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100%;
-    background: #458a9a;
-    border: 2px solid #458a9a;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+    margin-left: 0; /* Align the container to the left if needed */
+    padding: 0; /* No padding around the container */
 }
 
-.btn-box a:hover {
-    color: #458a9a;
+.slideshow-container img {
+    width: 100%; /* Image takes up the full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
 }
 
-.btn-box a:nth-child(2) {
-    background: transparent;
-    color: #458a9a;
-}
-
-.btn-box a:nth-child(2):hover {
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before {
-    background: #458a9a;
-}
-
-.btn-box a::before {
-    content: '';
+.prev, .next {
+    cursor: pointer;
     position: absolute;
-    top: 0;
+    top: 50%;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better visibility */
+}
+
+.prev {
     left: 0;
-    width: 0;
-    height: 100%;
-    background: #081b29;
-    z-index: -1;
-    transition: .5s;
+    border-radius: 0 3px 3px 0;
 }
 
-.btn-box a:hover::before {
-    width: 100%;
-}
-
-.home-sci {
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.home-sci::before {
-    content: '';
-    position: absolute;
-    top: 0;
+.next {
     right: 0;
-    width: 100%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2.5s;
-    z-index: 2;
+    border-radius: 3px 0 0 3px;
 }
 
-.home-sci a {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #458a9a;
+.prev:hover, .next:hover {
+    background-color: #458a9a;
+}
+
+.text {
+    color: #458a9a;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+.dot-container {
+    text-align: left; /* Center the dots horizontally */
+    margin-top: 10px; /* Space between the image and the dots */
+}
+
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #458a9a;
     border-radius: 50%;
-    font-size: 20px;
-    color: #458a9a;
-    text-decoration: none;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.home-sci a:hover {
-    color: #081b29;
-}
-
-.home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #458a9a;
-    z-index: -1;
-    transition: .5s;
-}
-
-.home-sci a:hover::before {
-    width: 100%;
-}
-
-.home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40%;
-    height: 100%;
-    background: transparent;
-    transition: 3s;
-    animation: manipActiveHover .1s forwards;
-    animation-delay: 4s;
-    pointer-events: none;
-}
-
-.home-imgHover:hover {
-    background: #081b29;
-    opacity: .8;
-}
-
-.home-imgHover::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 135%;
-    height: 100%;
-    background: #081b29;
-    animation: showRight 1s ease forwards;
-    animation-delay: 3s;
-    z-index: 100;
+.active, .dot:hover {
+    background-color: #717171;
 }
 
 
-/* KEYFRAMES ANIMATION */
-@keyframes showRight {
-    100% {
-        width: 0;
-    }
+.slide {
+    display: none;
 }
 
-@keyframes manipActiveHover {
-    100% {
-        pointer-events: auto;
-    }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+.tab-text {
+    padding-left: 2em; /* Adjust the value to increase or decrease the tab width */
+}
+a:hover {
+    color: #458a9a;/* Change to your desired color */
 }
