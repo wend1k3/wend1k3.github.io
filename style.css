@@ -397,6 +397,7 @@ body {
 
 .home-imgHover:hover {
     background: #081b29;
+    color: #ededed;
     opacity: .8;
 }
 
