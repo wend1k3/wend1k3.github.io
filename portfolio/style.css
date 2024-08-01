@@ -172,6 +172,18 @@ hr {
 .tab-text {
     padding-left: 2em; /* Adjust the value to increase or decrease the tab width */
 }
+a {
+    color:#ededed;
+    text-decoration:none;
+}
 a:hover {
     color: #458a9a;/* Change to your desired color */
+}
+.cat {
+    text-align: center;
+}
+.cat img{
+
+    width:50%
+
 }
