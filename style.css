@@ -65,7 +65,7 @@ body {
 
 .home {
     height: 100vh;
-
+    background-image: url("data/home.JPG");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -101,7 +101,8 @@ body {
     position: relative;
     font-size: 32px;
     font-weight: 700;
-    color: #458a9a;
+    color: #081b29;
+    background:#458a9a;
 }
 
 .home-content h3::before {
@@ -350,11 +351,11 @@ body {
     align-items: center;
     width: 40px;
     height: 40px;
-    background: transparent;
-    border: 2px solid #458a9a;
+    background: #458a9a;
+    border: 2px solid #ededed;
     border-radius: 50%;
     font-size: 20px;
-    color: #458a9a;
+    color: #ededed;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
@@ -372,7 +373,7 @@ body {
     left: 0;
     width: 0;
     height: 100%;
-    background: #458a9a;
+    background: #ededed;
     z-index: -1;
     transition: .5s;
 }
