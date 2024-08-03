@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Meow May Cry</title>
+    <link rel="stylesheet" href="portfoliocss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 <body>
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../portfolio.html" class="active">Portfolio</a>
+    </nav>
+</header>
+<section class="project-description">
+    <h1>Meow May Cry</h1>
+    <h4>June 2024</h4>
+    <hr>
+    <div class="media">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="../data/meow/play0.jpg" alt="">
 
+            </div>
+            <div class="slide fade">
+                <img src="../data/meow/play2.jpg" alt="">
+
+            </div>
+            <div class="slide fade">
+                <img src="../data/meow/play3.jpg" alt="">
+
+            </div>
+            <div class="slide fade">
+                <img src="../data/meow/end0.jpg" alt="">
+
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1wc7f-ia6O9ASIP4SC8gd42TwUMOOxg0-/preview" allow="autoplay" allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+    <hr>
+    <div class="description">
+        <p>Meow May Cry is a 2D two-player fighting game. </p>
+        <br>
+        <p>I personally:</p>
+        <p class="tab-text">· Programmed player controller, including movement and combat mechanics</p>
+        <p class="tab-text">· Implemented animations for each skill</p>
+        <p class="tab-text">· Implemented UI for health system and stamina bar of blocking</p>
+        <br>
+        <p>This is my first time doing a game jam and I found it quite different from hackathons.
+            Due to time conflict, we only had three days to build this game. Thankfully we managed to pull it off, thanks to effective communication.
+            As for improvement plan, we plan to modify the pope character into a AI enemy, like those common fighting games.</p>
+    </div>
+
+</section>
+<script src="image.js"></script>
 </body>
 </html>
