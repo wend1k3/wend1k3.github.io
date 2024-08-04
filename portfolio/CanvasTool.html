@@ -2,9 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Canvas Notifyer</title>
+    <link rel="stylesheet" href="portfoliocss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 </head>
 <body>
+<header class="header">
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../portfolio.html" class="active">Portfolio</a>
+    </nav>
+</header>
+<section class="project-description">
+    <h1>Canvas Notifyer</h1>
+    <h4>Aug--Nov 2023</h4>
+    <hr>
+    <div class="media">
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="../data/canvas/main_page.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../data/canvas/ass_page.jpg" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="../data/canvas/ann_page.jpg" alt="">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div class="video-container">
+            <iframe src="https://drive.google.com/file/d/1v4g9N0FBgyMjS8njE4nFiktOglU8JkMy/preview" allow="autoplay" allowfullscreen></iframe>
+        </div>
+    </div>
+    <hr>
+    <div class="description">
+    <p>Canvas Notifyer is a GUI Python program that retrieve and store data from Canvas (course management system used in UBC).
+        It shows the assignments that due within a week on the homepage, and has separate pages for assignments and announcements.
+        In assignment page, it will show each assignment's name, due date, points and score received in a table format, and supports the feature of checking description for specific assignment</p>
 
+    <br>
+    <p>I personally:</p>
+    <p class="tab-text">· Integrated Canvas API to fetch real-time content</p>
+    <p class="tab-text">· Implemented a database system using SQLite to ensure off-line access</p>
+    </div>
+</section>
+<script src="image.js"></script>
 </body>
 </html>
