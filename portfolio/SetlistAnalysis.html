@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Setlist Analysis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About</a>
+            <a href="../portfolio.html" class="active">Portfolio</a>
+        </nav>
+    </header>
+    <section class="project-description">
+        <h1>Setlist Analysis of Hacken Lee's Three Themed Concerts</h1>
+        <h4>Feb 2024</h4>
+        <hr>
+        <div class="media">
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <img src="../data/setlist/23HKquadrant.png" style="width:100%">
+                    <div class="text">23HK quadrant chart</div>
+                </div>
+                <div class="slide fade">
+                    <img src="../data/setlist/24GZquadrant.png" style="width:100%">
+                    <div class="text">24GZ quadrant chart</div>
+                </div>
+                <div class="slide fade">
+                    <img src="../data/setlist/25OMquadrant.png" style="width:100%">
+                    <div class="text">25OM quadrant chart</div>
+                </div>
+                <div class="slide fade">
+                    <img src="../data/setlist/23HKbar.png" style="width:100%">
+                    <div class="text">23HK bar chart</div>
+                </div>
+                <div class="slide fade">
+                    <img src="../data/setlist/24GZbar.png" style="width:100%">
+                    <div class="text">24GZ bar chart</div>
+                </div>
+                <div class="slide fade">
+                    <img src="../data/setlist/25OMbar.png" style="width:100%">
+                    <div class="text">25OM bar chart</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <hr>
+        <div class="description">
+            <p>Using data retrieved via the <b>Spotify Web API</b> (accessed through the <em>Spotipy</em> Python library), this analysis investigates:</p>
+              
+                <p class="tab-text">·<em>How are hit songs and lesser-known sidetracks balanced across the setlists?</em></p>
+                <p class="tab-text">·<em>Which albums are most favoured?</em></p>
+                <p class="tab-text">· <em>How do the setlists vary across different concert locations?</em></p>
+            <br>
+            <p>If you want to learn more about this analysis, feel free to take a look at the full report with code, analysis and commentary <a href="https://github.com/wend1k3/Setlist-Analysis/blob/main/report_eng.ipynb">here</a> on GitHub</p>
+        </div>
+
+    </section>
+
+
+
+<script src="image.js"></script>
+</body>
+</html>
