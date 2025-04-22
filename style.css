@@ -65,7 +65,7 @@ body {
 
 .home {
     height: 100vh;
-    background-image: url("data/home.JPG");
+    background-image: url("data/home.png");
     background-size: cover;
     background-position: center;
     display: flex;
